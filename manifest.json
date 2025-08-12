@@ -1,0 +1,26 @@
+{
+    "name": "Sarthak Agarwal - Full Stack Developer",
+    "short_name": "Sarthak Portfolio",
+    "description": "Professional portfolio of Sarthak Agarwal - Full Stack Developer",
+    "start_url": "./index.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#1e40af",
+    "orientation": "portrait-primary",
+    "scope": "./",
+    "icons": [
+      {
+        "src": "Sarthak image.jpg",
+        "sizes": "192x192",
+        "type": "image/jpeg",
+        "purpose": "any maskable"
+      },
+      {
+        "src": "Sarthak image.jpg",
+        "sizes": "512x512",
+        "type": "image/jpeg",
+        "purpose": "any maskable"
+      }
+    ]
+  }
+  
