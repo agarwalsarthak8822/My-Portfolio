@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarthak Agarwal - Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: white;
+            padding: 20px;
+        }
+
+        .resume-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            padding: 40px;
+        }
+
+        .header {
+            text-align: center;
+            border-bottom: 3px solid #2563eb;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            color: #2563eb;
+            margin-bottom: 10px;
+        }
+
+        .header h2 {
+            font-size: 1.3rem;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            font-size: 0.9rem;
+        }
+
+        .contact-info span {
+            color: #555;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            font-size: 1.4rem;
+            color: #2563eb;
+            border-bottom: 2px solid #2563eb;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        .about p {
+            text-align: justify;
+            color: #555;
+            font-size: 1rem;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .skill-category {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #2563eb;
+        }
+
+        .skill-category h4 {
+            color: #2563eb;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+
+        .skill-items {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .skill-item {
+            background: #2563eb;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-size: 0.85rem;
+        }
+
+        .experience-item, .project-item {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #2563eb;
+        }
+
+        .experience-item h4, .project-item h4 {
+            color: #2563eb;
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+        }
+
+        .company, .tech-stack {
+            color: #666;
+            font-weight: 500;
+            margin-bottom: 5px;
+        }
+
+        .date {
+            color: #888;
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+        }
+
+        .description {
+            color: #555;
+            text-align: justify;
+        }
+
+        .education-item {
+            text-align: center;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+        }
+
+        .education-item h4 {
+            color: #2563eb;
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+        }
+
+        .degree {
+            color: #666;
+            font-weight: 500;
+            margin-bottom: 5px;
+        }
+
+        .achievements {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+
+        .achievement-item {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            border-left: 4px solid #2563eb;
+        }
+
+        .achievement-item h4 {
+            color: #2563eb;
+            margin-bottom: 8px;
+        }
+
+        .achievement-item p {
+            color: #555;
+            font-size: 0.9rem;
+        }
+
+        @media print {
+            body {
+                padding: 0;
+            }
+            .resume-container {
+                box-shadow: none;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="resume-container">
+        <!-- Header -->
+        <div class="header">
+            <h1>Sarthak Agarwal</h1>
+            <h2>Full Stack Developer</h2>
+            <div class="contact-info">
+                <span>📧 agarwalsarthak8822@gmail.com</span>
+                <span>📱 +91 7427816995</span>
+                <span>📍 Bisauli(Baadaun), India</span>
+                <span>🔗 github.com/agarwalsarthak8822</span>
+                <span>💼 linkedin.com/in/sarthak-agarwal-926927325</span>
+            </div>
+        </div>
+
+        <!-- About -->
+        <div class="section">
+            <h3 class="section-title">About Me</h3>
+            <div class="about">
+                <p>Passionate Full Stack Developer with expertise in Node.js and Firebase. Currently pursuing B.Tech in Computer Science (AI & ML) at Teerthankar Mahaveer University. Built 10+ real-world web applications including SaaS platforms and innovative solutions. Specialized in creating responsive user interfaces and robust backend systems with focus on real-time functionality and user experience.</p>
+            </div>
+        </div>
+
+        <!-- Skills -->
+        <div class="section">
+            <h3 class="section-title">Skills & Technologies</h3>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h4>Programming Languages</h4>
+                    <div class="skill-items">
+                        <span class="skill-item">C</span>
+                        <span class="skill-item">C++</span>
+                        <span class="skill-item">Python</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4>Frontend Development</h4>
+                    <div class="skill-items">
+                        <span class="skill-item">HTML</span>
+                        <span class="skill-item">CSS</span>
+                        <span class="skill-item">JavaScript</span>
+                        <span class="skill-item">Tailwind CSS</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4>Backend Development</h4>
+                    <div class="skill-items">
+                        <span class="skill-item">Node.js</span>
+                        <span class="skill-item">Firebase</span>
+                        <span class="skill-item">REST APIs</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4>Development Tools</h4>
+                    <div class="skill-items">
+                        <span class="skill-item">Git</span>
+                        <span class="skill-item">GitHub</span>
+                        <span class="skill-item">VS Code</span>
+                        <span class="skill-item">Cursor</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4>Design & Creative</h4>
+                    <div class="skill-items">
+                        <span class="skill-item">Figma</span>
+                        <span class="skill-item">Canva</span>
+                        <span class="skill-item">Adobe Firefly</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4>Additional Skills</h4>
+                    <div class="skill-items">
+                        <span class="skill-item">SEO Basics</span>
+                        <span class="skill-item">Google Maps API</span>
+                        <span class="skill-item">CodePen</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Experience -->
+        <div class="section">
+            <h3 class="section-title">Professional Experience</h3>
+            <div class="experience-item">
+                <h4>Full-Stack Developer | Pharmacy SaaS Platform</h4>
+                <div class="company">Team Project</div>
+                <div class="date">May 2025 - Present</div>
+                <div class="description">
+                    Leading development of a comprehensive pharmacy management system with real-time inventory tracking and order management. Implemented role-based dashboards and integrated Google Maps API for delivery tracking.
+                </div>
+            </div>
+            <div class="experience-item">
+                <h4>Frontend Developer</h4>
+                <div class="company">Freelance Projects</div>
+                <div class="date">2024 - Present</div>
+                <div class="description">
+                    Developed multiple web applications including YouTube clone, Amazon clone, and interactive games (Coin flip, Rock-Paper-Scissors). Focused on responsive design and user experience optimization.
+                </div>
+            </div>
+        </div>
+
+        <!-- Projects -->
+        <div class="section">
+            <h3 class="section-title">Featured Projects</h3>
+            <div class="project-item">
+                <h4>SaaS 10-Minute Medicine Delivery</h4>
+                <div class="tech-stack">HTML, CSS, JavaScript, Node.js, Firebase, Maps API</div>
+                <div class="date">March 2025 - Present</div>
+                <div class="description">
+                    A comprehensive pharmacy management platform with real-time order placement and delivery tracking. Features store verification and role-based dashboards for different user types.
+                </div>
+            </div>
+            <div class="project-item">
+                <h4>Virtual Blood Donation Platform</h4>
+                <div class="tech-stack">Firebase, Real-time Database, Authentication</div>
+                <div class="date">February 2025 (Hackathon Project)</div>
+                <div class="description">
+                    Emergency donor-recipient matching portal built in 48 hours during a hackathon. Features real-time updates and Firebase authentication for secure user management.
+                </div>
+            </div>
+        </div>
+
+        <!-- Education -->
+        <div class="section">
+            <h3 class="section-title">Education</h3>
+            <div class="education-item">
+                <h4>Teerthankar Mahaveer University, Moradabad</h4>
+                <div class="degree">B.Tech in Computer Science (AI & ML)</div>
+                <div class="date">2024 - 2028</div>
+            </div>
+        </div>
+
+        <!-- Achievements -->
+        <div class="section">
+            <h3 class="section-title">Achievements & Certifications</h3>
+            <div class="achievements">
+                <div class="achievement-item">
+                    <h4>10+ Real-World Applications</h4>
+                    <p>Successfully built and deployed over 10 web applications with SaaS functionality, demonstrating practical development skills.</p>
+                </div>
+                <div class="achievement-item">
+                    <h4>Hackathon Finalist</h4>
+                    <p>Reached finals in multiple hackathons with innovative projects including real-time blood donation app and CodeClash competitions.</p>
+                </div>
+                <div class="achievement-item">
+                    <h4>Code Clash 2.0 Participant</h4>
+                    <p>Received participation certificate for Code Clash 2.0 competition held on June 28, 2025.</p>
+                </div>
+                <div class="achievement-item">
+                    <h4>TMU Internal Hackathon</h4>
+                    <p>Participated in Teerthankar Mahaveer University internal hackathon on February 17, 2025.</p>
+                </div>
+                <div class="achievement-item">
+                    <h4>Event Speaker</h4>
+                    <p>Featured as a speaker at TMU Fresher's Event 2024, sharing insights about technology and development.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
